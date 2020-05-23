@@ -1,3 +1,7 @@
+function tom1() {
+  var audio = new Audio('sounds/tom-1.mp3');
+  audio.play();
+}
 
 // add an event listener to add the drums available.
 // start with var the query selector with drums and attach length
@@ -7,9 +11,5 @@
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numberOfDrumButtons; i++) {
-
-  document.querySelectorAll(".drum")[i].addEventListener("click", function () {
-    alert("I got clicked!")
-  });
+  document.querySelectorAll(".drum")[i].addEventListener("click", tom1);
 }
-
