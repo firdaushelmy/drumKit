@@ -18,6 +18,8 @@ document.addEventListener("keydown", function (event) {
   buttonAnimation(event.key)
 });
 
+// function is called by both event listener above. 
+// switch statement to play audio when above event listener condition are met
 function playSound(key) {
   switch (key) {
     case "w":
@@ -60,6 +62,8 @@ function playSound(key) {
   }
 }
 
+// function is called by both event listener above. 
+// function to animate buttons when users press key or tap the button
 function buttonAnimation(currentKey) {
   var activeButton = document.querySelector("." + currentKey)
 
