@@ -28,7 +28,7 @@ function playSound(key) {
       break;
 
     case "a":
-      var tom2 = new Audio('/public/sounds/tom-2.mp3');
+      var tom2 = new Audio('public/sounds/tom-2.mp3');
       tom2.play();
       break;
 
